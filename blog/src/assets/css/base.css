@@ -1,0 +1,95 @@
+@import './normalize.css';
+@import '../iconfont/iconfont.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei","PingFang SC", "微软雅黑", Arial,sans-serif;
+}
+
+body#light {
+  --app-background-color: #fff;
+  --background-color: #f6f6f6;
+  --app-background-color-light: #fff;
+  --font-color-primary: #161b3d;
+  --font-color-article: #606266;
+  --theme-active: #409EFF;
+  --border-color: #dcdfe7;
+  --tag-color: #f4f4f4;
+}
+
+body#dark {
+  --app-background-color: #282c35;
+  --background-color: #282c35;
+  --app-background-color-light: #2f333e;
+  --font-color-primary: silver;
+  --font-color-article: silver;
+  --theme-active: #75bfd7;
+  --border-color: #545c6f;
+  --tag-color: #333844;
+}
+
+body {
+  font-family: Noto Sans,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: break-word;
+  background-color: var(--app-background-color);
+  transition: all .1s linear;
+  color: var(--font-color-primary);
+  background-color: var(--background-color);
+}
+
+a {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+a:focus {
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+
+/* 定义滚动条样式 */
+::-webkit-scrollbar {
+  width: .35rem;
+  height: .35rem;
+  background: hsla(0, 0% ,100%, .6);
+}
+
+/*定义滚动条轨道*/
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+/*定义滑块*/
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: hsla(0, 0%, 39.2%, .4);
+  transition: all .2s;
+}
