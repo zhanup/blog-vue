@@ -38,7 +38,7 @@
 git clone https://github.com/zhanup/blog-vue.git
 ```
 
-分别进入项目目录 `blog`、`admin`、`service` 后，安装依赖
+分别进入 `blog`、`admin`、`service` 文件夹，安装依赖
 
 ```
 npm install
@@ -50,7 +50,7 @@ npm install
 mongod --dppath=xxx
 ```
 
-进入 `service` 目录下的 `server` 文件夹，进入运行服务器。（确保数据库mongodb已经启动）
+进入 `service` 目录下启动服务器。（确保数据库mongodb已经启动）
 
 ```
 nodemon app.js
