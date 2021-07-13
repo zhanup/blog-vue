@@ -1,21 +1,11 @@
-@font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1617005703318'); /* IE9 */
-  src: url('iconfont.eot?t=1617005703318#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
-  url('iconfont.woff?t=1617005703318') format('woff'),
-  url('iconfont.ttf?t=1617005703318') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('iconfont.svg?t=1617005703318#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1626170263796') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  line-height: 1;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: baseline;
-  display: inline-block;
+  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,43 +15,7 @@
   content: "\e606";
 }
 
-.icon-message:before {
-  content: "\e78a";
-}
-
-.icon-heart:before {
-  content: "\e7df";
-}
-
-.icon-heart-fill:before {
-  content: "\e849";
-}
-
-.icon-message-fill:before {
-  content: "\e84a";
-}
-
-.icon-tags-fill:before {
-  content: "\e86e";
-}
-
-.icon-mail-fill:before {
-  content: "\e86f";
-}
-
-.icon-QQ:before {
-  content: "\e882";
-}
-
-.icon-wechat-fill:before {
-  content: "\e883";
-}
-
-.icon-github-fill:before {
-  content: "\e885";
-}
-
 .icon-password:before {
-  content: "\e607";
+  content: "\e608";
 }
 

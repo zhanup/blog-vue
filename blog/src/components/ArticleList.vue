@@ -75,6 +75,9 @@ export default {
   margin-bottom: 60px;
   position: relative;
 }
+#article-list .article-item:last-child {
+  margin-bottom: 0;
+}
 #article-list .article-wrapper {
   width: calc(100% - 340px - 4vw);
   color: var(--font-color-article);

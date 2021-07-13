@@ -163,9 +163,14 @@ export default {
         });
     },
     async getData(kind) {
-      const res = await request({url: `/${kind}`});
-      this.blogs = res;
-      this.total = this.blogs.length;
+      try {
+        const res = await request({url: `/${kind}`});
+        this.blogs = JSON.stringify(res) === '{}' ? [] : res
+        this.total = this.blogs.length;
+      } catch (error) {
+        this.$message.err('获取数据失败')
+      }
+      
     },
 
     toNew() {

@@ -8,7 +8,7 @@
           <input type="text" v-model="username" placeholder="用户名" />
         </div>
         <div class="item">
-          <i class="iconfont">&#xe607;</i>
+          <i class="iconfont">&#xe608;</i>
           <input type="password" v-model="password" placeholder="密码" @keydown.enter="login" />
         </div>
       </div>

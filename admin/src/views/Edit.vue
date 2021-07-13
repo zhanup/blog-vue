@@ -33,16 +33,16 @@
     </div>
     <DynamicTags class="tags" :tags="tags" v-model="tags" />
     <el-input class="abstract" type="textarea" :rows="3" placeholder="摘要" v-model="abstract"></el-input>
-    <mavon-editor ref="md" @imgAdd="$imgAdd" @imgDel="$imgDel" v-model="content"/>
+    <mavon-editor ref="md" :ishljs = "true" @imgAdd="$imgAdd" @imgDel="$imgDel" v-model="content"/>
   </div>
 </template>
 
 <script>
 import DynamicTags from '@/components/DynamicTags';
 import { request } from "@/request/index";
+import axios from 'axios';
 import { mavonEditor } from "mavon-editor";
-import "mavon-editor/dist/css/index.css";
-import axios from 'axios'
+import 'mavon-editor/dist/css/index.css';
 
 export default {
   name: "Edit",
@@ -108,7 +108,8 @@ export default {
             tags: this.tags,
             date: new Date() 
           };
-          await request({ method: "post", url: `/article/new`, data });
+          const res = await request({ method: "post", url: `/article/new`, data });
+          console.log(res)
           this.$router.push("/manage");
         } else {
           const data = {
@@ -131,8 +132,6 @@ export default {
 
     // 上传到七牛云
     uploadCover($event) {
-      if (this.coverUrl !== '') return false
-
       const formdata = new FormData()
       formdata.append('token', this.uploadToken)
       formdata.append('file', $event.target.files[0])

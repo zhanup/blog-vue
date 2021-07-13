@@ -287,7 +287,7 @@ export default {
 #detail .comm_add .el-input__inner,
 #detail .comm_add .el-textarea__inner
  {
-  background-color: var(--app-background-color);
+  background-color: var(--background-color);
   color: var(--font-color-primary);
   border-color: var(--border-color);
 }

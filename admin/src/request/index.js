@@ -13,7 +13,7 @@ export const request = (params) => {
   // 创建axios实例
   const instance = axios.create({
     baseURL: '/api',
-    timeout: 1000
+    // timeout: 2000
   });
 
   // 请求拦截

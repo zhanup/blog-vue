@@ -151,7 +151,7 @@ export default {
 }
 #about .add-message .el-input__inner,
 #about .add-message .el-textarea__inner {
-  background-color: var(--app-background-color);
+  background-color: var(--app-background-color-light);
   color: var(--font-color-article);
   border-color: var(--border-color);
 }
@@ -173,7 +173,7 @@ export default {
   font-size: 14px;
   border-radius: 50%;
   padding: 10px;
-  background-color: var(--app-background-color);
+  background-color: var(--app-background-color-light);
   border-color: var(--border-color);
   color: var(--font-color-primary);
 }
@@ -186,8 +186,9 @@ export default {
   width: 100%;
   margin: .4em 0;
   padding: 1em;
-  background-color: var(--tag-color);
+  background-color: var(--app-background-color-light);
   transition: all .25s ease-in-out;
+  border-radius: 4px;
 }
 #about  .message-item .name {
   height: 24px;

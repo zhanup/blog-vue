@@ -141,7 +141,8 @@ router.get('/api/article/data', (req, res) => {
 
 // 添加数据
 router.post('/api/article/new', (req, res) => {
-    new mArticle(req.body).save((err) => {
+    console.log('new')
+    new mArticle(req.body).save((err, data) => {
         if (err) {
             res.send(err)
             return
